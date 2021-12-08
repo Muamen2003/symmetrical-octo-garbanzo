@@ -1,0 +1,79 @@
+public class StriOp {
+    
+        
+    public int [] mulArry(int [] r , int [] e)
+       {
+           int p[] = new int[r.length];
+          if(r.length == e.length){
+           
+             for(int o = 0 ;  o<r.length  ; o++  )
+             {
+                p[o] = r[o]*e[o];
+             }
+          
+             return p;}
+          else
+              return null;
+              
+          
+             
+       }
+     public float [] divArry(float [] r , float [] e)
+       {
+           
+           float p[] = new float[r.length];
+          if(r.length == e.length){
+           
+             for(int o = 0 ;  o<r.length  ; o++  )
+             {
+                 if(e[o] != 0)
+                p[o] = r[o]/e[o];
+                 else
+                     System.out.println("div by zero!!");
+             }
+          
+             return p;}
+          else
+              return null;
+              
+          
+             
+       }
+    
+    public int [] sumArry(int [] c , int [] f){
+         
+        int [] z = new int [c.length];
+          
+          if(c.length == f.length){
+           
+             for(int o = 0 ;  o<z.length  ; o++  )
+             {
+                z[o] = c[o]+f[o];
+             }
+          
+             return z;}
+          else
+              return null;
+        
+        
+    }
+    
+     public int [] minArry(int [] c , int [] f){
+         
+        int [] z = new int [c.length];
+          
+          if(c.length == f.length){
+           
+             for(int o = 0 ;  o<z.length  ; o++  )
+             {
+                z[o] = c[o]-f[o];
+             }
+          
+             return z;}
+          else
+              return null;
+        
+        
+    }
+    
+}
